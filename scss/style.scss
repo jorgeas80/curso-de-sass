@@ -1,5 +1,3 @@
-@import 'extends';
-@import 'control';
 @import 'variables';
 @import 'mixins';
 @import 'layout';
@@ -10,7 +8,7 @@ body {
     font-family: $font-family;
     padding: 0;
     margin: 0;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 1.5em;
 }
 
@@ -29,17 +27,5 @@ h2 {
 
 p {
     margin: 0 0 1em 0;
+    font-size: $fp;
 }
-
-// Comentario
-blockquote {
-    margin: 0 0 20px 0;
-    
-    p {
-        margin: 0;
-    }
-}
-
-/* 
-Comentario 
-*/

@@ -34,3 +34,31 @@
         opacity: 0.8;
     }
 }
+
+
+%btn {
+    display: inline-block;
+    padding: 10px 20px 10px 36px;
+    color: white;
+    font-size: 0.8em;
+    border-radius: 4px;
+    text: {
+        decoration: none;
+        transform: uppercase;
+    }
+    background: {
+        position: 8px 50%;
+        repeat: no-repeat;
+        size: 20px 20px;
+    }
+}
+
+@each $red, $color in $redes {
+    .btn-#{$red} {
+        @extend %btn;
+        background: {
+            color: $color;
+            image: url('../img/icon-#{$red}.png');
+        }
+    }
+}
